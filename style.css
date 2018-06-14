@@ -67,7 +67,7 @@ html {
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 	padding: 10px;
-	margin: 5px 375px;
+	margin: 7px 290px;
 	float: right;
 
 }
@@ -127,8 +127,11 @@ h2 {
 }
 
 .Article ul li {
-		display: inline-block;
-		float: right;
+	color: white;
+	padding: 10px;
+	margin: 10px;
+	list-style: none;
+
 }
 
 .Article {
@@ -151,19 +154,28 @@ h2 {
 
 }
 
-.Article button {
+.Article .submitBtn {
 	color: white;
 	background-color: #726c64;
 	border: 2px solid #86ed00;
 	border-radius: 10px;
 	padding: 10px;
+	margin: 10px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
 }
 
-textarea {
+.Article input, textarea {
 	border-radius: 10px;
 	border: 2px solid #86ed00;
 	padding: 10px;
+	float: right;
+
+}
+
+.post {
+	background: white;
+	border-radius: 10px;
+	border: 2px solid #86ed00;
 
 }
