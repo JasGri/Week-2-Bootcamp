@@ -63,13 +63,13 @@
 		<h2>Nieuwe post</h2>
 		<ul>
 				<li>Titel artikel: <input name="blogtitel"></li>
-				<li>Naam: <input name="naam"></li>
+				<li>Auteur: <input name="naam"></li>
 				<li>Uw tekst: <textarea name="posttxt"></textarea></li>
 				<li><input type="submit" onclick="submit" class="submitBtn"></li>
 		</ul>
 </form>
 
-<div class="PostArticle">
+<!-- <div class="PostArticle"> -->
 <?php
 
 $datum = file_get_contents('data/datum.txt', true);
@@ -77,16 +77,13 @@ $blogtitel = file_get_contents('data/blogtitel.txt', true);
 $naam = file_get_contents('data/naam.txt', true);
 $posttxt = file_get_contents('data/posttxt.txt', true);
 
-echo $datum. "<br>". "<br>". "<h1>". $blogtitel. "</h1>". "<br>". "<br>". "<h2>". $naam. "</h2>". "<br>". "<br>".  $posttxt. "<br>". "<br>";
+echo "<h1>".$blogtitel. "</h1>". "<br>". $naam. "<br>". $datum. "<br>". "<br>". $posttxt. "<br>";
 
 ?>
 
-<?php
 
 
-?>
 
-</div>
 
 
 </body>
