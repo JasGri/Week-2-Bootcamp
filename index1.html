@@ -59,16 +59,23 @@
 	</div>
 </div>
 
-<form class="Article">
+<form class="Article" action="mijnscript.php" method="post">
 		<h2>Nieuwe post</h2>
 		<ul>
-				<li>Blogtitel: <input name="blogtitle"></li>
+				<li>Blogtitel: <input name="blogtitel"></li>
 				<li>Naam: <input name="naam"></li>
-				<li><textarea name="PostTxt"></textarea></li>
-				<li><button onclick="postArticle()"><i class="fa fa-plus">Plaats artikel</i></button></li>
+				<li><textarea name="posttxt"></textarea></li>
+				<li><input type="submit" onclick="submit" class="submitBtn" value="Plaats artikel"></li>
 		</ul>
 </form>
 
+<?PHP
+
+$file_contents = fopen( "data/blog.txt", "r", false);
+echo fprint($file_contents);
+fclose($file_contents);
+
+?>
 
 
 </body>
